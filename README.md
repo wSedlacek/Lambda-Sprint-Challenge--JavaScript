@@ -30,13 +30,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+- `.forEach()` runs a given callback on each element of an array `.map()` runs a callback expecting a return value to add to a newly generated array.
+
 2. What is the difference between a function and a method?
+
+- A method is simply a function that is part of a class defination or prototype.
 
 3. What is closure?
 
+- A closure is a function that stores it's local state then returns a function to access that local state and have it preserved after each call.
+
 4. Describe the four rules of the 'this' keyword.
 
+- Window/Global binding - When this is in the global scope it refers to the window or global element.
+- Implicit Binding - When a function is called as part of an object this will by default refer to the object the function was called on (what is to the left of the .)
+- New binding - When a constructor function is used this refers to the specific instance of that object.
+- Explicit binding - When using `.call()` `.apply()` `.bind()` this is defined as an argument. Other methods like those in `Array` also may have an optional this argument.
+
 5. Why do we need super() in an extended class?
+
+- `super()` refers to the overwritten function from the class we extended from, so in the constor calling `super(...arg)` would allow us to call the parent classes constor function to apply all attributes that may include.
 
 ## Project Set up
 
